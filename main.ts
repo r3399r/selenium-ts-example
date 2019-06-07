@@ -1,20 +1,21 @@
 import { Browser } from './lib';
 import * as url from './lib/url';
+import assert = require('assert');
 
 describe('Test Updating User Profile', () => {
     let pages: Browser;
     let portalUrl: string = url.mainUrl;
 
-    beforeAll(async () => {
+    before(async () => {
         pages = new Browser('chrome');
     });
 
-    afterAll(async () => {
+    after(async () => {
         await pages.close();
     });
 
     describe('#1: Open the login web page', () => {
-        beforeAll(async () => {
+        before(async () => {
             // Action
             const btnId = 'article-287144404';
             await pages.navigate(portalUrl);
@@ -24,7 +25,8 @@ describe('Test Updating User Profile', () => {
             // Assert
             // const loginHome = await pages.getCurrentUrl();
             // assert.equal(loginHome, portalUrl + '/home/login');
-            expect(1).toBe(1);
+            // expect(1).toBe(1);
+            assert.equal(1,1)
         });
     });
 });
