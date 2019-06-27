@@ -18,10 +18,13 @@
   },
   "homepage": "https://github.com/r3399r/selenium-ts-example#readme",
   "dependencies": {
+    "@types/jest": "^24.0.15",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.0.7",
+    "jest": "^24.8.0",
     "mocha": "^6.1.4",
     "selenium-webdriver": "^4.0.0-alpha.1",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.5.1"
   }
 }
